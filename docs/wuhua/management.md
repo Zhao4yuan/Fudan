@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "4.管理学院"
+title: "管理学院"
 parent: "物化组"
 nav_order: 4
 ---
 
-# 4.管理学院
+# 管理学院
 {: .no_toc }
 
 ## 目录

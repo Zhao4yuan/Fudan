@@ -1,0 +1,103 @@
+// Typography & spacing refinements for a more comfortable CJK reading experience.
+
+$cjk-font-stack: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue",
+  "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+
+body,
+.side-bar,
+.main-content {
+  font-family: $cjk-font-stack;
+}
+
+.main-content {
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  max-width: 850px;
+}
+
+.main-content p,
+.main-content li {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
+.main-content h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.main-content h2 {
+  margin-top: 2.2em;
+  margin-bottom: 0.9em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $border-color;
+  font-weight: 600;
+}
+
+.main-content h3,
+.main-content h4 {
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
+  font-weight: 600;
+}
+
+.main-content hr {
+  margin: 2em 0;
+  border-top: 1px solid $border-color;
+}
+
+.main-content blockquote {
+  padding: 0.6em 1.2em;
+  border-left: 4px solid $link-color;
+  background-color: rgba($link-color, 0.05);
+  color: $body-text-color;
+}
+
+.main-content img {
+  border-radius: 6px;
+  margin: 1em 0;
+}
+
+// Sidebar: airier spacing between nav items, softer active/hover states.
+.side-bar {
+  font-size: 15px;
+}
+
+.nav-list .nav-list-item {
+  margin: 0.05em 0;
+}
+
+.nav-list .nav-list-link {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 4px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-list .nav-list-link:hover {
+  background-color: rgba($link-color, 0.08);
+}
+
+.nav-list .nav-list-link.active {
+  font-weight: 600;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-header,
+.site-footer {
+  border-color: $border-color;
+}
+
+// Table of contents block at top of each page.
+.table-of-contents {
+  padding: 1em 1.4em;
+  border-radius: 6px;
+  background-color: rgba($link-color, 0.04);
+}
