@@ -1,6 +1,20 @@
 title: 复旦大学专业填报指南
 description: 面向志愿填报的专业介绍与就读体验
 lang: zh-CN
-theme: jekyll-theme-cayman
+
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 markdown: kramdown
 show_downloads: false
+
+# just-the-docs settings
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "在 GitHub 上查看":
+    - "//github.com/Zhao4yuan/Fudan"
+
+nav_sort: case_insensitive
