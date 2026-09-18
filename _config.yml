@@ -9,9 +9,11 @@ markdown: kramdown
 show_downloads: false
 
 # just-the-docs settings
-color_scheme: light
+color_scheme: custom
 search_enabled: true
 heading_anchors: true
+back_to_top: true
+back_to_top_text: "回到顶部"
 
 aux_links:
   "在 GitHub 上查看":

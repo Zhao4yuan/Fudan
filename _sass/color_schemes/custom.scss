@@ -1,0 +1,17 @@
+// A blue-accented, flat/minimal color scheme inspired by VitePress-style docs
+// (e.g. SJTU-Wiki), built on top of just-the-docs' default "light" scheme.
+$link-color: #2f6fed;
+$btn-primary-color: #2f6fed;
+
+$body-background-color: #ffffff;
+$sidebar-color: #f6f8fa;
+$code-background-color: #f6f8fa;
+$table-background-color: #ffffff;
+$search-background-color: #ffffff;
+
+$border-color: #e5e7eb;
+$body-heading-color: #1f2328;
+$body-text-color: #24292f;
+$nav-child-link-color: #57606a;
+
+$feedback-color: darken($sidebar-color, 3%);

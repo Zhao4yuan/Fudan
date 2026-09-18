@@ -83,6 +83,9 @@ body,
 
 .nav-list .nav-list-link.active {
   font-weight: 600;
+  color: $link-color;
+  background-color: rgba($link-color, 0.1);
+  box-shadow: inset 3px 0 0 0 $link-color;
 }
 
 .site-title {
@@ -90,7 +93,20 @@ body,
   letter-spacing: 0.02em;
 }
 
-.site-header,
+// Sticky, slightly elevated top bar — VitePress-style flat header.
+.site-header {
+  border-color: $border-color;
+}
+
+@media (min-width: 50em) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+}
+
 .site-footer {
   border-color: $border-color;
 }
@@ -100,4 +116,29 @@ body,
   padding: 1em 1.4em;
   border-radius: 6px;
   background-color: rgba($link-color, 0.04);
+}
+
+// Code & tables: rounded, flat, subtly bordered like VitePress docs.
+.main-content pre.highlight,
+.main-content code {
+  border-radius: 6px;
+}
+
+.main-content table {
+  border-radius: 6px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+// Links inside prose get an underline on hover only, matching a flat doc-site feel.
+.main-content a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($link-color, 0.3);
+  transition: border-color 0.15s ease;
+}
+
+.main-content a:hover {
+  border-bottom-color: $link-color;
 }
